@@ -2,8 +2,10 @@
 
 ### Python Environment
 
-#### 1. Install Packages
+#### 1. train
+
+cd train/FlagEmbedding-master/FlagEmbedding/llm_reranker/finetune_for_instruction
 
 ```b
-pip install -r requirements.txt
+ssh run_bge_step3_llama.sh
 ```
