@@ -1,0 +1,44 @@
+data_path: []
+train_data: '/home/chenning/code/Eedi/datas/data/train_data.json'
+valid_data: ''
+resume_from_checkpoint: ''
+all_in_one: True
+prompt_type: 3
+if_train: True
+split: False
+split_by_prompt: True
+extranal_data: True
+if_concat : True
+if_drop_duplicate: True
+keep: 'last'
+per_device_train_batch_size: 1
+per_device_eval_batch_size: 1
+learning_rate: 1.5e-4
+lr_end: 1.e-6
+warmup_ratio: 0.1
+warmup_steps: 30
+num_train_epochs: 5
+gradient_accumulation_steps: 16
+logging_steps: 10
+eval_steps: 1200
+save_steps: 50
+weight_decay: 1.e-5
+MAX_INPUT: 2200
+MAX_OUTPUT: 1000
+MODEL: /home/chenning/opensource_models/qwen/Qwen2.5-Math-7B-Instruct
+dropout_rate: 0.1
+awp_lr: 0
+awp_eps: 1.e-4
+awp_start_epoch: 0.5
+label_smoothing_factor: 0
+output_dir: 'output'
+use_cache: False
+token_type: 'MC'
+lora_r: 32
+lora_alpha: 64
+lora_dropout: 0.05
+test_mode: False
+# TEACHER_MODEL: /home/chenning/opensource_models/gemma-2
+# TEACHER_LORA_PATH: /home/chenning/code/LMSYS/checkpoints2/gemma2_len_2200_all_train/checkpoint-5750
+# alpha: 0.6
+# temperature: 1.0
