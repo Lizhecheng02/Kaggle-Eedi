@@ -1,1 +1,0 @@
-The dir to store more advanced generated data.
