@@ -4,8 +4,7 @@
 
 #### 1. train
 
-cd train/FlagEmbedding-master/FlagEmbedding/llm_reranker/finetune_for_instruction
-
 ```b
+cd train/FlagEmbedding-master/FlagEmbedding/llm_reranker/finetune_for_instruction
 ssh run_bge_step3_llama.sh
 ```
